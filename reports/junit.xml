@@ -1,6 +1,34 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="34.047872000000005">
-<testsuite name="tests\ui\registration.spec.js" timestamp="2025-11-03T06:10:16.736Z" hostname="UI - Chromium" tests="1" failures="0" skipped="0" time="29.474" errors="0">
-<testcase name="user registration success + error states" classname="tests\ui\registration.spec.js" time="29.474">
+<testsuites id="" name="" tests="10" failures="0" skipped="0" errors="0" time="5.464152">
+<testsuite name="tests\api\transactions.spec.js" timestamp="2025-11-03T16:00:51.439Z" hostname="API Tests" tests="2" failures="0" skipped="0" time="0.036" errors="0">
+<testcase name="Transactions API › create transaction (201) and list (200)" classname="tests\api\transactions.spec.js" time="0.029">
+</testcase>
+<testcase name="Transactions API › validation error (400) - negative amount" classname="tests\api\transactions.spec.js" time="0.007">
+</testcase>
+</testsuite>
+<testsuite name="tests\api\users.spec.js" timestamp="2025-11-03T16:00:51.439Z" hostname="API Tests" tests="4" failures="0" skipped="0" time="0.112" errors="0">
+<testcase name="Users API › create user (201) and validate" classname="tests\api\users.spec.js" time="0.057">
+</testcase>
+<testcase name="Users API › get user (200)" classname="tests\api\users.spec.js" time="0.017">
+</testcase>
+<testcase name="Users API › validation error (400) - invalid email" classname="tests\api\users.spec.js" time="0.019">
+</testcase>
+<testcase name="Users API › auth required (401) when no token" classname="tests\api\users.spec.js" time="0.019">
+</testcase>
+</testsuite>
+<testsuite name="tests\ui\registration.spec.js" timestamp="2025-11-03T16:00:51.439Z" hostname="UI - Chromium" tests="1" failures="0" skipped="0" time="2.418" errors="0">
+<testcase name="user registration success + error states" classname="tests\ui\registration.spec.js" time="2.418">
+</testcase>
+</testsuite>
+<testsuite name="tests\ui\transaction.spec.js" timestamp="2025-11-03T16:00:51.439Z" hostname="UI - Chromium" tests="1" failures="0" skipped="0" time="2.407" errors="0">
+<testcase name="transaction success + validation error" classname="tests\ui\transaction.spec.js" time="2.407">
+</testcase>
+</testsuite>
+<testsuite name="tests\ui\registration.spec.js" timestamp="2025-11-03T16:00:51.439Z" hostname="UI - Firefox" tests="1" failures="0" skipped="0" time="1.52" errors="0">
+<testcase name="user registration success + error states" classname="tests\ui\registration.spec.js" time="1.52">
+</testcase>
+</testsuite>
+<testsuite name="tests\ui\transaction.spec.js" timestamp="2025-11-03T16:00:51.439Z" hostname="UI - Firefox" tests="1" failures="0" skipped="0" time="1.686" errors="0">
+<testcase name="transaction success + validation error" classname="tests\ui\transaction.spec.js" time="1.686">
 </testcase>
 </testsuite>
 </testsuites>
