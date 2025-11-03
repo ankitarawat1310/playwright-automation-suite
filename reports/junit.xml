@@ -1,0 +1,6 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="34.047872000000005">
+<testsuite name="tests\ui\registration.spec.js" timestamp="2025-11-03T06:10:16.736Z" hostname="UI - Chromium" tests="1" failures="0" skipped="0" time="29.474" errors="0">
+<testcase name="user registration success + error states" classname="tests\ui\registration.spec.js" time="29.474">
+</testcase>
+</testsuite>
+</testsuites>

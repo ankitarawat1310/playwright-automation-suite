@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fintech Demo</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 24px; }
+      form { margin-bottom: 24px; padding: 16px; border: 1px solid #ddd; border-radius: 8px; }
+      label { display:block; margin: 8px 0 4px; }
+      input { padding: 8px; width: 320px; }
+      button { margin-top: 12px; padding: 8px 12px; }
+      .msg { margin-top: 8px; }
+    </style>
+  </head>
+  <body>
+    <h1>Fintech Demo</h1>
+
+    <form id="userForm">
+      <h2>Create User</h2>
+      <label>Name</label><input id="name" />
+      <label>Email</label><input id="email" />
+      <label>Account Type</label><input id="accountType" value="premium" />
+      <button type="submit">Register</button>
+      <div id="userMsg" class="msg"></div>
+    </form>
+
+    <form id="txForm">
+      <h2>Create Transaction</h2>
+      <label>User ID</label><input id="userId" />
+      <label>Amount</label><input id="amount" />
+      <label>Type</label><input id="type" value="transfer" />
+      <label>Recipient ID</label><input id="recipientId" value="456" />
+      <button type="submit">Send</button>
+      <div id="txMsg" class="msg"></div>
+    </form>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

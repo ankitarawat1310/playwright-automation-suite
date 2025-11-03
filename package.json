@@ -1,0 +1,30 @@
+{
+  "name": "playwright-automation-suite",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "report": "playwright show-report",
+    "mock:api": "node mock-server/server.js",
+    "serve:ui": "http-server ./app -p 5173 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitarawat1310/playwright-automation-suite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankitarawat1310/playwright-automation-suite/issues"
+  },
+  "homepage": "https://github.com/ankitarawat1310/playwright-automation-suite#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "http-server": "^14.1.1"
+  }
+}
