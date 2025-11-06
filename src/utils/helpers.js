@@ -1,10 +1,11 @@
 import { request } from '@playwright/test';
+import { env } from '../config/env.js';
 
 // Returns a Playwright APIRequestContext pre-wired for our API
 export async function apiContext() {
   return await request.newContext({
-    baseURL: 'http://localhost:4000',
-    extraHTTPHeaders: { Authorization: 'Bearer test-token' }
+    baseURL: env.api.baseURL,
+    extraHTTPHeaders: { Authorization: `Bearer ${env.api.authToken}` }
   });
 }
 
