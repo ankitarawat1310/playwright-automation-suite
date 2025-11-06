@@ -1,4 +1,4 @@
-# Playwright Automation Framework — Fintech take-home
+# Playwright Automation Framework — Fintech
 
 ## Overview
 Small Playwright-based test framework with API and UI suites against a mock fintech backend (Users + Transactions). Designed to be easy to run locally and to demo during interviews.
@@ -43,7 +43,7 @@ npx playwright test --project="UI - Chromium" # UI only
 Headed demo (visual):
 
 ```powershell
-npx playwright test --project="UI - Chromium" --headed --debug
+npx playwright test --project="UI - Chromium" --headed
 ```
 
 Open HTML report:
@@ -55,20 +55,6 @@ npx playwright show-report
 ## What the tests cover
 - API: create/get users, create/list transactions, validation errors, auth negative test
 - UI: registration flow and transaction creation + client-visible error messages
-
-## Interview talking points
-- Multi-project Playwright config separates API and UI concerns and enables focused runs.
-- Factories centralize test data; helpers create request contexts with auth headers.
-- Reporting: JUnit XML for CI, HTML report + traces/videos/screenshots for debugging failures.
-- Test reliability: tests create their own preconditions (UI transaction test creates a user). For stronger parallelism, add a `POST /__test/reset` endpoint or spin per-worker mock servers.
-
-## Notes / Next steps (optional)
-- Make `app/app.js` environment-driven (it currently uses `http://localhost:4000` and static token). For CI, read base URL and token from `env` or use relative fetches.
-- Add a small `demo.ps1` to run servers and a headed demo automatically.
-
----
-Open `tests/` and `playwright.config.js` during the interview to show structure and reporting.
-Playwright Automation Framework — Fintech Microservices (Take-Home Assessment)
 
 Author: Ankit Rawat
 Overview
@@ -174,11 +160,6 @@ npx playwright test --project="UI - Chromium"
 Headed (visible browser):
 
 npx playwright test --headed
-
-
-Debug mode (with Inspector):
-
-npx playwright test tests/ui/registration.spec.js --project="UI - Chromium" --debug
 
 4️ View Reports
 
