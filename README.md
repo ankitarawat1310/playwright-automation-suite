@@ -118,8 +118,8 @@ npx playwright show-report
 
 Artifacts (on failure):
 
-📸 Screenshots
+Screenshots
 
-🎥 Video recordings
+Video recordings
 
-🧩 Trace files (step-by-step replay)
+Trace files (step-by-step replay)
