@@ -1,5 +1,5 @@
-const API = 'http://localhost:4000';   // same port as your mock server
-const token = 'test-token';            // must match server middleware
+const API = 'http://localhost:4000';   
+const token = 'test-token';          
 
 async function postJson(path, data) {
   const res = await fetch(`${API}${path}`, {
